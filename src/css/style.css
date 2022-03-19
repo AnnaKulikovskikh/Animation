@@ -71,12 +71,28 @@
     animation: fly 500ms ease-out 1;
 }
 
-@keyframes fly {
+.fly_left {
+    animation: fly1 500ms ease-out 1;
+}
+
+.fly_right {
+    animation: fly2 500ms ease-out 1;
+}
+
+@keyframes fly1 {
     0% {transform: translate(0px, 0px);}
     25% {transform: translate(50px, -50px);}
     50% {transform: translate(-50px, -100px);}
     75% {transform: translate(50px, -150px);}
     100% {transform: translate(-50px, -200px)}
+}
+
+@keyframes fly2 {
+    0% {transform: translate(0px, 0px);}
+    25% {transform: translate(-50px, -50px);}
+    50% {transform: translate(50px, -100px);}
+    75% {transform: translate(-50px, -150px);}
+    100% {transform: translate(50px, -200px)}
 }
 
 .form {

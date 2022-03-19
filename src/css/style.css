@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.screen {
+    width: 500px;
+    height: 500px;
+}
+
+.btn{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background: rgb(1, 123, 255);
+    border: solid 3px transparent;
+    color: white;
+}
+
+.btn:hover {
+    background: blue;
+}
+
+.btn:active{
+    border: solid 3px rgb(1, 123, 255);
+}
+
+.message {
+    width: 300px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding: 3px;
+    animation: message 5s 1 linear;
+}
+
+@keyframes message {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.like{
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    background: red;
+    color: white;
+}
+
+.fly {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/heart.png");
+    animation: fly 500ms ease-out 1;
+}
+
+@keyframes fly {
+    0% {transform: translate(0px, 0px);}
+    25% {transform: translate(50px, -50px);}
+    50% {transform: translate(-50px, -100px);}
+    75% {transform: translate(50px, -150px);}
+    100% {transform: translate(-50px, -200px)}
+}
+
+.form {
+    display: none;
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(234, 236, 236);
+    border-radius: 10px;
+    box-shadow: blanchedalmond 10px;
+    animation: form 2s linear 1;
+}
+
+@keyframes form {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.view {
+    display: flex;
+}
+
+.noview {
+    display: none;
+}
+
+.form_top {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross {
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea {
+    width: 280px;
+    height:300px;
+    resize: none;
+    border-radius: 20px;
+    border: solid 1px lightgrey;
+    padding: 20px;
+}
+
+.submit {
+    width: 280px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    margin-top: 10px;
+    background:lightgrey;
+}
+
+.messanger_btn {
+    margin-top: 10px;
+    margin-left: 310px;
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.messanger_btn:active {
+    width: 50px;
+    height: 50px;
+}
+
+/*
+.coin-animation {
+    animation: coin 10s infinite reverse;
+    transition: color 3s ease 0s;
+}
+
+.coin-animation:hover{
+    background: blue;
+}
+
+@keyframes coin{
+    0% { transform: rotateY(360deg);}
+    10% { transform: rotateY(0deg);}
+}
+*/   
+   
